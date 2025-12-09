@@ -14,8 +14,7 @@ const userSchema=new mongoose.Schema(
         pasword:{
             type:String,
             required:true,
-            minlength:8,
-            maxlength:12,
+            minlength:6,
         },
         profilepic:{
             type:String
