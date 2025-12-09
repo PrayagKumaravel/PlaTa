@@ -14,4 +14,5 @@ export const GenerateJwt=(userid,res)=>{
         sameSite: "strict",
         secure: process.env.STAGE=="production",
     });
+    return token;
 }
