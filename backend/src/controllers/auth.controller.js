@@ -6,7 +6,7 @@ export const signup= async (req,res) => {
     
     try{
         const {fullname,email,password}=req.body;
-        if (!fullname || !email || !pasword) {
+        if (!fullname || !email || !password) {
             return res.status(400).json({ message: "fullname, email, and password are required" });
         }
 
